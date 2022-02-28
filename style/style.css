@@ -151,3 +151,27 @@ html{
     margin: 1em 0;
     font-size: 1.1em;
 }
+
+
+/* footer  */
+
+footer {
+    text-align: center;
+    padding: 3em;
+}
+
+footer .icons{
+    font-size: 2em;
+}
+
+footer a {
+    color: #363939;
+}
+
+footer a:hover {
+    color: #00A8CC;
+}
+
+footer i {
+    margin: .5em;
+}
