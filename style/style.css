@@ -5,7 +5,8 @@ html{
 }
 
 .navbar {
-    padding: 1.25em;
+    padding: 0.75em;
+   
 }
 
 .navbar a{
@@ -25,47 +26,46 @@ html{
     border: 1px solid #000
 }
 
+.navbar button[type=submit] {
+    border: 1px solid #000;
+    height: 100%;
+}
+
 .navbar input::placeholder {
     color: #000;
 }
 
-.navbar button {
-    border: 1px solid #000;
-}
-
-.navbar button:hover {
-    color: #fff;
-    background-color: #00A8CC;
-}
-
-
-
-/* main container */
-
-
-
-
-.main {
-    margin-top: 7.5em;
+.navbar-collapse {
     margin-bottom: 2em;
+    border-bottom: 1px solid #8695A4;
+}
+
+ /* main container */
+.main .row {
+    margin: 1em;
+}
+
+.logo {
+    order: -1;
+    text-align: center;
 }
 
 .main img{
     border-radius: 100%;
-    width: 22em;
-    box-shadow: -10px 10px #DAE1E3;
+    width: 11em;
+    box-shadow: -5px 5px #DAE1E3;
 }
 
 .main h2 {
+    font-size: 2.5em;
     margin-top: 1em;
-    font-size: 3em;
+    text-align: center;
     font-weight: 650;
 }
 
 .main p {
     margin-top: 2em;
-    text-align: justify;
-    margin-right: 2em;
+    text-align: center;
     font-size: 1.05em;
 }
 
@@ -75,33 +75,35 @@ html{
     font-weight: 500;
     background-color: #00A8CC;
     padding: 0.5em 4em;
-    margin: 3em 0;
+    margin: 0 auto;
+    display: block;
+    width: 70%;
 }
-
 
 /* Recent Projects */
 
 .recentProjects {
-    padding: 2em;
+    padding: 0.5em;
     background-color: #363939;
     border-radius: 0.3em;
     color: #fff;
 }
 
+.recentProjects h3{
+    text-align: center;
+    margin: 1em 0;
+}
+
 .moreProjects {
-    text-decoration: none;
-    color: #00A8CC;
-    margin-left: auto;
-    position: relative;
-    left: calc(100% - 150px);
-    top: -30px;
+    display: none;
 }
 
 .projects {
     background-color: #fff;
-    border-radius: 1em;
-    padding: 2em;
+    border-radius: 0.25em;
+    padding: 1em;
     color: #000;
+    margin-bottom: 1em;
 }
 
 .projects h4 {
@@ -122,14 +124,23 @@ html{
     color: #21243D;
 }
 
+.mainProjects h3{
+    text-align: center;
+}
+
 .mainProject {
     padding: 1em 0;
     border-bottom: 1px solid #E0E0E0;
 }
 
+.mainProject img {
+    width: 100%;
+}
+
 .mainProject h4{
     font-weight: 700;
-    font-size: 2em;
+    font-size: 1.7em;
+    margin-top: 1em;
 }
 
 .mainProject .year{
@@ -152,7 +163,6 @@ html{
     font-size: 1.1em;
 }
 
-
 /* footer  */
 
 footer {
@@ -174,4 +184,91 @@ footer a:hover {
 
 footer i {
     margin: .5em;
+}
+
+@media (min-width: 768px) {
+
+    .navbar {
+        padding: 1.25em;
+    }
+
+
+    .navbar button:hover {
+        color: #fff;
+        background-color: #00A8CC;
+    }
+
+    .navbar-collapse {
+        margin-bottom: 0;
+        border-bottom: 0;
+    }
+
+    .main {
+        margin-top: 7.5em;
+        margin-bottom: 2em;
+    }
+
+
+    .logo {
+        order: 1;
+    }
+
+    .main img {
+        width: 22em;
+        box-shadow: -10px 10px #DAE1E3;
+    }
+
+    .main h2 {
+        font-size: 3em;
+        text-align: start;
+    }
+    
+    .main p {
+        text-align: justify;
+        margin-right: 2em;
+    }
+    
+    .main a {
+        display: inline-block;
+        margin: 3em 0;
+        width: fit-content;
+    }
+    
+   
+
+    /* Recent Projects */
+
+    .recentProjects {
+        padding: 2em;
+    }
+
+    .recentProjects h3{
+        text-align: start;
+    }
+
+    .moreProjects {
+        text-decoration: none;
+        color: #00A8CC;
+        margin-left: auto;
+        position: relative;
+        left: calc(100% - 150px);
+        top: -30px;
+    }
+
+    .projects {
+        border-radius: 1em;
+        padding: 2em;
+        margin-bottom: 0;
+    }
+
+    /* Main Projects */
+
+    .mainProjects h3{
+        text-align: start;
+    }
+
+    .mainProject h4{
+        font-size: 2em;
+    }
+
 }
