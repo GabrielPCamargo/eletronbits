@@ -186,6 +186,33 @@ footer i {
     margin: .5em;
 }
 
+/* página secundária */
+
+.tutoriais {
+    margin: 1em 1em;
+}
+
+.tutoriais h2 {
+    font-weight: 700;
+    font-size: 2.75em;
+    margin-bottom: 1em;
+}
+
+.tutoriais .projects {
+    border-radius: 0;
+    padding: 1em 0;
+    border-bottom: 1px solid #c1c8cf;
+}
+
+.tutoriais .date {
+    font-size: 1.25em;
+}
+
+.tutoriais .category {
+    color: #8695A4;
+    font-size: 1.25em;
+}
+
 @media (min-width: 768px) {
 
     .navbar {
@@ -269,6 +296,10 @@ footer i {
 
     .mainProject h4{
         font-size: 2em;
+    }
+
+    .tutoriais {
+        margin: 1em 12em;
     }
 
 }
